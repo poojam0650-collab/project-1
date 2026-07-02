@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADAGASCAR</title>
+    <script src="https://kit.fontawesome.com/f68f888739.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0;
+        }
+    
+        header{
+            top: 0;
+            position: sticky;
+            z-index: 1000;
+            background-color: white;
+            color: black;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .logo{
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+        .logo h2{
+            margin: 0;
+        }
+        header ul{
+            list-style: none;
+            gap: 40px;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+        }
+        header ul li{
+           display: inline; 
+        }
+        header ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: gray;
+        }
+        header ul li a:hover{
+            color: navy;
+        }
+        .logo1{
+             color: red;
+             font-size: 30px;
+        }
+        .container{
+            width: 90%;
+            margin: 40px auto;
+            display: flex;
+        }
+        .sidebar{
+            width: 250px;
+           
+        }
+        .sidebar h2{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .sidebar hr{
+            margin-bottom: 15px;
+        }
+        .sidebar h3{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .sidebar ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li{
+            margin: 15px 0;
+            display: block;
+        }
+
+        .sidebar  ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .sidebar ul li a:hover{
+            color: navy;
+        
+        }
+        .products{
+            flex: 1;
+            margin-left: 50px;
+        }
+        .top-bar{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+        }
+        .top-bar select{
+            padding: 8px 15px;
+            font-size: 15px;
+        }
+        .product-grid{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .soft{
+            position: relative;
+            text-align: center;
+            width: 300px;
+        }
+        .sale{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: red;
+            color: white;
+            padding: 6px 10px;
+            font-size: 15px;
+        }
+        .soft img{
+            width: 200px;
+            height: 200px;
+
+        }
+        .soft p{
+            font-size: 20px;
+            color: gray;
+        }
+        .price{
+            font-size: 14px;
+        }
+        .price del{
+            color: black;
+            margin-bottom: 15px;
+
+        }
+        .price span{
+           font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>
+                <i id="i1" class="fa-brands fa-arch-linux"></i>
+                MADAGASCAR
+            </h2>
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+         <div class="logo1">
+        <i   class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-regular fa-circle-user"></i>
+        </div>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Browse by</h2>
+            <hr>
+            <h3>All products</h3>
+            <ul>
+                <li><a href="">Best Seller</a></li>
+                <li><a href="">Rain Coats</a></li>
+                <li><a href="">Sleeping Bags</a></li>
+                <li><a href="">Tent Shops</a></li>
+            </ul>
+        </aside>
+        <section class="products">
+            <div class="top-bar">
+              <select name="Sort by:" >
+                <option>Name A-Z</option>
+                <option>Recommended</option>
+                <option>Newest</option>
+                <option>Price (low to high)</option>
+                <option>Price (high to low)</option>
+                <option>Name A-Z</option>
+                <option>Name Z-A</option>
+              </select>
+            </div>
+            <div class="product-grid">
+                <div class="soft">
+                    <span class="sale">Sale</span>
+                    <img src="./tent1.jpg" alt="">
+                    <p>I'm a product</p>
+                    <div class="price">
+                        <del>$135.00</del>
+                        <span>$114.75</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
