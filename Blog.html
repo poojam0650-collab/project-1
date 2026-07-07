@@ -55,6 +55,116 @@
             color: red;
             font-size: 30px;
         }
+        .blog-title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 60px 0;
+        }
+
+        .blog-title::before,
+        .blog-title::after{
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: lightgray;
+        }
+
+        .blog-title h1{
+            margin: 0 30px;
+            font-size: 50px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: gray;
+        }
+        .blog-container{
+    width:90%;
+    margin:50px auto;
+
+    column-count:2;     
+    column-gap:30px;     
+}
+        .card{
+            width:500px;
+            background:#fff;
+        }
+
+        .card img{
+            width:100%;
+            display:block;
+        }
+
+        .post-info{
+            display:flex;
+            align-items:center;
+            padding:18px;
+        }
+
+        .user{
+            font-size:38px;
+            color:#bdbdbd;
+            margin-right:12px;
+        }
+
+        .details{
+            flex:1;
+        }
+
+        .admin{
+            display:block;
+            font-size:15px;
+            font-weight:bold;
+        }
+
+        .meta{
+            display:flex;
+            gap:8px;
+            color:#777;
+            font-size:14px;
+            margin-top:3px;
+        }
+        .content{
+            padding:0 18px 18px;
+        }
+
+        .content h2{
+            font-size:38px;
+            margin-bottom:15px;
+        }
+
+        .content p{
+            color:#666;
+            line-height:1.7;
+            font-size:18px;
+        }
+        .content p:hover{
+            color: red;
+        }
+        hr{
+            border:none;
+            height:1px;
+            background:#ddd;
+            margin:0 18px;
+        }
+
+        .footer{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:18px;
+            color:#666;
+        }
+
+        .footer div{
+            display:flex;
+            gap:20px;
+        }
+
+        .footer i{
+            color:#e25d5d;
+            font-size:22px;
+        }
+        
         </style>
 </head>
 <body>
@@ -69,15 +179,98 @@
      <li><a href="index.html">Home</a></li>
      <li><a href="Shop.html">Shop</a></li>
      <li><a href="Blog.html">Blog</a></li>
-     <li><a href="">About</a></li>
-     <li><a href="">Contact</a></li>
+     <li><a href="About.html">About</a></li>
+     <li><a href="Contact.html">Contact</a></li>
     </ul>
     <div class="logo1">
         <i   class="fa-solid fa-bag-shopping"></i>
         <i class="fa-regular fa-circle-user"></i>
-        
-
     </div>
-    </header> 
+</header> 
+<section class="blog-title">
+    <h1>Blog</h1>
+</section>
+<div class="blog-container">
+
+    <div class="card">
+        <img src="./tent6.jpg" alt="">
+        <div class="post-info">
+            <i class="fa-regular fa-circle-user"></i>
+            <div class="details">
+                <span class="admin">Admin</span>
+                
+                <div class="meta">
+                    <span>May 16, 2023</span>
+                    <span>•</span>
+                    <span>2 min read</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="content">
+            
+            <h2>The world's most stunning camping spots</h2>
+            
+            <p>
+                Create a blog post subtitle that summarizes your
+                post in a few short, punchy sentences and entices
+                your audience to continue reading.....
+            </p>
+            
+        </div>
+        
+        <hr>
+        
+        <div class="footer">
+            <div>
+                <span>7 views</span>
+                <span>0 comments</span>
+            </div>
+            
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        
+    </div>
+
+<div class="card">
+    <img  src="./raincoat3.jpg" alt="">
+    <div class="post-info">
+        <i class="fa-regular fa-circle-user"></i>
+        <div class="details">
+            <span class="admin">Admin</span>
+            
+            <div class="meta">
+                <span>May 16, 2023</span>
+                <span>•</span>
+                <span>2 min read</span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="content">
+        
+        <h2>The world's most stunning camping spots</h2>
+        
+        <p>
+            Create a blog post subtitle that summarizes your
+            post in a few short, punchy sentences and entices
+            your audience to continue reading.....
+        </p>
+        
+    </div>
+    
+    <hr>
+    
+    <div class="footer">
+        <div>
+            <span>7 views</span>
+            <span>0 comments</span>
+        </div>
+        
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    
+</div>
+</div>
 </body>
 </html>
